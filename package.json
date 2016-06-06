@@ -4,11 +4,6 @@
 	"version": "0.1",
 	"private": true,
 	"dependencies": {
-        "mongodb": "1.1.8",
         "express": "3.x"
-    },
-    "engines": {
-        "node": "0.8.4",
-        "npm": "1.1.49"
     }
 }

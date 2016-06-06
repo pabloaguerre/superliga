@@ -14,7 +14,7 @@ app.configure(function () {
 	app.use(express.bodyParser());
     app.use(express.static(path.join(__dirname, 'public')));
 
-    // Add headers
+    // Add headers 
 	app.use(function (req, res, next) {
 
 	    // Website you wish to allow to connect
