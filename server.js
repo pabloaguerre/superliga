@@ -18,7 +18,8 @@ app.configure(function () {
 	app.use(function (req, res, next) {
 
 	    // Website you wish to allow to connect
-	    res.setHeader('Access-Control-Allow-Origin', 'http://www.rhintegralconsulting.com');
+	    //res.setHeader('Access-Control-Allow-Origin', 'http://www.rhintegralconsulting.com');
+	    res.setHeader('Access-Control-Allow-Origin', '23.251.142.83');
 
 	    // Request methods you wish to allow
 	    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
@@ -53,6 +54,6 @@ app.post('/messages', dbMngr.addMessage);
 app.put('/messages/:id', dbMngr.updateMessage);
 app.delete('/messages/:id', dbMngr.removeMessage);*/
 
-http.createServer(app).listen(app.get('port'), '10.240.167.82', function () {
+http.createServer(app).listen(app.get('port'), '10.132.0.2', function () {
     console.log("Express server listening on port " + app.get('port'));
 });
