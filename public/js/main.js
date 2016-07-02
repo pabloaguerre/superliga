@@ -121,7 +121,7 @@ jQuery(function($) {'use strict';
 		            'Yahir',
 		            200,
 		            0,
-		            'Debe'
+		            'Debe (Cumplio siempre en los meses previos)'
 		        ] ).draw( false );
 		        t.row.add( [
 		            'Nico',
@@ -145,13 +145,19 @@ jQuery(function($) {'use strict';
 		            'Pichon',
 		            100,
 		            0,
-		            'Deberia (*No es fijo)'
+		            'Deberia (No es fijo)'
 		        ] ).draw( false );
 		        t.row.add( [
 		            'Juanpi',
 		            200,
 		            0,
 		            'Debe'
+		        ] ).draw( false );
+		        t.row.add( [
+		            'Franco V',
+		            0,
+		            0,
+		            'No debe (Nuevo)'
 		        ] ).draw( false );
 		}
 
