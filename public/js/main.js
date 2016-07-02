@@ -48,6 +48,113 @@ jQuery(function($) {'use strict';
 			});
 		}
 
+		if( $('#asroma-pagos').length ) {
+			var t = $('#asroma-pagos').DataTable({
+						"language": {
+						    "decimal":        "",
+						    "emptyTable":     "No existen datos disponibles",
+						    "info":           "Mostrando _START_ - _END_ de un total de _TOTAL_ jugadores",
+						    "infoEmpty":      "Mostrando 0 - 0 de un total de 0 jugadores",
+						    "infoFiltered":   "(filtrado de _MAX_ total de jugadores)",
+						    "infoPostFix":    "",
+						    "thousands":      ",",
+						    "lengthMenu":     "Mostrar _MENU_ jugadores",
+						    "loadingRecords": "Cargando...",
+						    "processing":     "Procesando...",
+						    "search":         "Buscar:",
+						    "zeroRecords":    "Jugador no encontrado",
+						    "paginate": {
+						        "first":      "",
+						        "last":       "",
+						        "next":       "Sig.",
+						        "previous":   "Prev."
+						    },
+						    "aria": {
+						        "sortAscending":  ": activatar para ordenar columna de manera ascendente",
+						        "sortDescending": ": activatar para ordenar columna de manera descendente"
+						    }
+						},
+				        /*"order": [[ 6, "desc" ], [ 5, 'desc' ]],*/
+				        "ordering": true,
+        				"info": true,
+        				"paging": false,
+        				"responsive": true,
+        				"searching": true
+				    });
+				t.row.add( [
+		            'Pablo',
+		            400,
+		            0,
+		            'No debe'
+		        ] ).draw( false );
+		        t.row.add( [
+		            'Martin',
+		            400,
+		            0,
+		            'No debe'
+		        ] ).draw( false );
+		        t.row.add( [
+		            'Milton',
+		            300,
+		            0,
+		            'Debe'
+		        ] ).draw( false );
+		        t.row.add( [
+		            'Ema',
+		            400,
+		            0,
+		            'No debe'
+		        ] ).draw( false );
+		        t.row.add( [
+		            'Luis',
+		            100,
+		            0,
+		            'Debe'
+		        ] ).draw( false );
+		        t.row.add( [
+		            'Lucho',
+		            400,
+		            0,
+		            'No debe'
+		        ] ).draw( false );
+		        t.row.add( [
+		            'Yahir',
+		            200,
+		            0,
+		            'Debe'
+		        ] ).draw( false );
+		        t.row.add( [
+		            'Nico',
+		            200,
+		            0,
+		            'Debe'
+		        ] ).draw( false );
+		        t.row.add( [
+		            'Mati',
+		            400,
+		            0,
+		            'No debe'
+		        ] ).draw( false );
+		        t.row.add( [
+		            'Nico O.',
+		            400,
+		            0,
+		            'No debe'
+		        ] ).draw( false );
+		        t.row.add( [
+		            'Pichon',
+		            100,
+		            0,
+		            'Deberia (*No es fijo)'
+		        ] ).draw( false );
+		        t.row.add( [
+		            'Juanpi',
+		            200,
+		            0,
+		            'Debe'
+		        ] ).draw( false );
+		}
+
 		if( $('#posiciones-libre-a').length ) {
 			var t = $('#posiciones-libre-a').DataTable({
 						"language": {

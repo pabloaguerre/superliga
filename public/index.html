@@ -7,9 +7,10 @@
     <meta name="author" content="">
     <title>Inicio | SUPERLIGA</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/dataTables.bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet"> 
     <link href="css/lightbox.css" rel="stylesheet"> 
+    <link href="css/animate.min.css" rel="stylesheet"> 
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
 
@@ -31,10 +32,6 @@
                 <div class="col-sm-12 overflow">
                    <div class="social-icons pull-right">
                         <ul class="nav nav-pills">
-                            <li><a href="https://www.facebook.com/Superliga-529724427152686"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="https://twitter.com/SUPERLIGA_OK"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href=""><i class="fa fa-dribbble"></i></a></li>
                         </ul>
                     </div> 
                 </div>
@@ -51,25 +48,11 @@
                     </button>
 
                     <a class="navbar-brand" href="index.html">
-                    	<h1><img src="images/logo.png" alt="logo"></h1>
                     </a>
                     
                 </div>
                 <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="index.html">Inicio</a></li>
-                        <li class="dropdown"><a href="#">Categorias <i class="fa fa-angle-down"></i></a>
-                            <ul role="menu" class="sub-menu">
-                                <li><a href="aboutus.html">Libre A</a></li>
-                                <li><a href="aboutus2.html">Libre B</a></li>
-                                <!--orig*** li><a href="service.html">Services</a></li>
-                                <li><a href="pricing.html">Pricing</a></li>
-                                <li><a href="contact.html">Contact us</a></li>
-                                <li><a href="contact2.html">Contact us 2</a></li>
-                                <li><a href="404.html">404 error</a></li>
-                                <li><a href="coming-soon.html">Coming Soon</a></li-->
-                            </ul>
-                        </li>                  
+                    <ul class="nav navbar-nav navbar-right">                 
                         <!--orig*** li class="dropdown"><a href="blog.html">Blog <i class="fa fa-angle-down"></i></a>
                             <ul role="menu" class="sub-menu">
                                 <li><a href="blog.html">Blog Default</a></li>
@@ -90,45 +73,59 @@
                                 <li><a href="portfolio-details.html">Portfolio Details</a></li>
                             </ul>
                         </li                         
-                        <li><a href="shortcodes.html ">Shortcodes</a></li-->
-                        <li><a href="contact2.html">Contacto</a></li>                    
+                        <li><a href="shortcodes.html ">Shortcodes</a></li-->                    
                     </ul>
                 </div>
                 <div class="search">
-                    <form role="form">
-                        <i class="fa fa-search"></i>
-                        <div class="field-toggle">
-                            <input type="text" class="search-form" autocomplete="off" placeholder="Search">
-                        </div>
-                    </form>
                 </div>
             </div>
         </div>
     </header>
     <!--/#header-->
 
-    <section id="home-slider">
-        <div class="container">
-            <div class="main-slider">
-                <div class="slide-text">
-                    <h1>Bienvenidos al Sitio Oficial de la Superliga</h1>
-                    <p>Torneo de futbol amateur de la ciudad de Cordoba, Argentina. Con mas de 40 equipos y 10 canchas en su predio, la Superliga de Cordoba vive la pasion del futbol amateur de una manera distinta ...</p>
-                    <!--orig** a href="#" class="btn btn-common">INGRESAR<</a-->
+    <section id="page-breadcrumb">
+        <div class="vertical-center sun">
+             <div class="container">
+                <div class="row">
+                    <div class="action">
+                        <div class="col-sm-12">
+                            <h1 class="title">AS ROMA 2016 - Segundo Semestre</h1>
+                            <p>Pagos</p>
+                        </div>
+                     </div>
                 </div>
-                <img src="images/home/slider/slide1/house.png" class="img-responsive slider-house" alt="slider image">
-                <!--orig*** img src="images/home/slider/slide1/circle1.png" class="slider-circle1" alt="slider image"-->
-                <!--orig*** img src="images/home/slider/slide1/circle2.png" class="slider-circle2" alt="slider image"-->
-                <img src="images/home/slider/slide1/cloud1.png" class="slider-cloud1" alt="slider image">
-                <img src="images/home/slider/slide1/cloud2.png" class="slider-cloud2" alt="slider image">
-                <img src="images/home/slider/slide1/cloud3.png" class="slider-cloud3" alt="slider image">
-                <img src="images/home/slider/slide1/sun.gif" class="slider-sun" alt="slider image">
-                <!--orig*** img src="images/home/slider/slide1/sun.png" class="slider-sun" alt="slider image"-->
-                <!--orig*** img src="images/home/cycle.png" class="slider-cycle" alt=""-->
             </div>
         </div>
-        <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
+   </section>
+    <!--/#page-breadcrumb-->
+
+    <section id="company-information" class="padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <div class="container">
+            <div class="row">
+                    <table id="asroma-pagos" class="table table-striped table-bordered" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>JUN</th>
+                                <th>JUL</th>
+                                <th>ESTADO</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>JUN</th>
+                                <th>JUL</th>
+                                <th>ESTADO</th>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+            </div>
+        </div>
     </section>
-    <!--/#home-slider-->
 
     <section id="services">
         <div class="container">
@@ -136,30 +133,24 @@
                 <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
                     <div class="single-service">
                         <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
-                            <img src="images/home/icon1.png" alt="">
                         </div>
                         <div class="wow scaleIn" data-wow-duration="600ms" data-wow-delay="1000ms">
-                            <img src="images/home/icon6.png" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
                     <div class="single-service">
                         <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
-                            <img src="images/home/icon2.png" alt="">
                         </div>
                         <div class="wow scaleIn" data-wow-duration="600ms" data-wow-delay="1000ms">
-                            <img src="images/home/icon5.png" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
                     <div class="single-service">
                         <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
-                            <img src="images/home/icon3.png" alt="">
                         </div>
                         <div class="wow scaleIn" data-wow-duration="600ms" data-wow-delay="1000ms">
-                            <img src="images/home/icon4.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -173,150 +164,169 @@
              <div class="container">
                 <div class="row">
                     <div class="action take-tour">
-                        <div class="col-sm-7 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                            <h1 class="title">Predio</h1>
-                            <p>Mas de 10 canchas de futbol 11 con Seguridad establecida.</p>
-                        </div>
-                        <div class="col-sm-5 text-center wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                            <div class="tour-button">
-                                <a href="contact2.html" class="btn btn-common">VER UBICACION</a>
-                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-   </section>
-    <!--/#action-->
-
-    <section id="features">
-        <div class="container">
-            <div class="row">
-                <div class="single-features">
-                    <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <img src="images/home/image1.png" class="img-responsive" alt="">
-                    </div>
-                    <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2>Equipos</h2>
-                        <P>Mas de 40 equipos divididos en primera y segunda division libres.</P>
-                    </div>
-                </div>
-                <div class="single-features">
-                    <div class="col-sm-6 col-sm-offset-1 align-right wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2>Cuidado del Cesped</h2>
-                        <P>Implantacion de la especie bermudagrass (Cynodon dactylon) como cesped base con resiembras de Rye Grass anual o perenne en los meses del otoño.</P>
-                    </div>
-                    <div class="col-sm-5 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <img src="images/home/image2.png" class="img-responsive" alt="">
-                    </div>
-                </div>
-                <div class="single-features">
-                    <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <img src="images/home/image3.png" class="img-responsive" alt="">
-                    </div>
-                    <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2>Iluminacion</h2>
-                        <P>Dispnible en canchas principales durante el invierno o en caso de recuparacion de fechas.</P>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-     <!--/#features-->
+    <!--/#action-->
 
-    <section id="clients">
+    <section id="team">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
-                    <div class="clients text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <p><img src="images/home/clients.png" class="img-responsive" alt=""></p>
-                        <h1 class="title">Organizadores</h1>
-                        <p>Adicionalmente, patrocinan las siguinentes empresas</p>
+                <h1 class="title text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="300ms">Inscripcion</h1>
+                <p class="text-center wow fadeInDown" data-wow-duration="400ms" data-wow-delay="400ms">Dependiendo del torneo que elijamos y la cantidad de gente varia entre $4.000 y $5.000. Por ahora, en el fondo hay $1.200 ya que se uso parte del pago del mes de Junio para cubrir los partidos que se jugaron durante ese mes y las expulsiones (Por favor notar que no toda la gente abono en su totalidad el mes).</p>
+                <div id="team-carousel" class="carousel slide wow fadeIn" data-ride="carousel" data-wow-duration="400ms" data-wow-delay="400ms">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators visible-xs">
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="team-single-wrapper">
+                                    <div class="team-single">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="team-single-wrapper">
+                                    <div class="team-single">
+                                        <div class="person-thumb">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="team-single-wrapper">
+                                    <div class="team-single">
+                                        <div class="person-thumb">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="team-single-wrapper">
+                                    <div class="team-single">
+                                        <div class="person-thumb">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="team-single-wrapper">
+                                    <div class="team-single">
+                                        <div class="person-thumb">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="team-single-wrapper">
+                                    <div class="team-single">
+                                        <div class="person-thumb">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="team-single-wrapper">
+                                    <div class="team-single">
+                                        <div class="person-thumb">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="team-single-wrapper">
+                                    <div class="team-single">
+                                        <div class="person-thumb">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="clients-logo wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
-                        <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client1.png" class="img-responsive" alt=""></a>
-                        </div>
-                        <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client2.png" class="img-responsive" alt=""></a>
-                        </div>
-                         <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client3.png" class="img-responsive" alt=""></a>
-                        </div>
-                         <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client4.png" class="img-responsive" alt=""></a>
-                        </div>
-                         <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client5.png" class="img-responsive" alt=""></a>
-                        </div>
-                         <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client6.png" class="img-responsive" alt=""></a>
-                        </div>
-                    </div>
+
+                    <!-- Controls -->
                 </div>
             </div>
         </div>
-     </section>
-    <!--/#clients-->
+    </section>
+    <!--/#team-->
 
     <footer id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center bottom-separator">
-                    <img src="images/home/under.png" class="img-responsive inline" alt="">
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="testimonial bottom">
-                        <h2>Ingreso</h2>
+                        <!--orig***h2>Testimonial</h2>
                         <div class="media">
-                            Por Regimiento de Infanteria Paracaidista 14
-                        </div> 
+                            <div class="pull-left">
+                                <a href="#"><img src="images/home/profile1.png" alt=""></a>
+                            </div>
+                            <div class="media-body">
+                                <blockquote>Nisi commodo bresaola, leberkas venison eiusmod bacon occaecat labore tail.</blockquote>
+                                <h3><a href="#">- Jhon Kalis</a></h3>
+                            </div>
+                         </div>
                         <div class="media">
-                            <img src="images/home/profile1.png" alt="">
-                        </div>
+                            <div class="pull-left">
+                                <a href="#"><img src="images/home/profile2.png" alt=""></a>
+                            </div>
+                            <div class="media-body">
+                                <blockquote>Capicola nisi flank sed minim sunt aliqua rump pancetta leberkas venison eiusmod.</blockquote>
+                                <h3><a href="">- Abraham Josef</a></h3>
+                            </div>
+                        </div-->   
                     </div> 
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="contact-info bottom">
-                        <h2>Contacto</h2>
+                        <!--orig***h2>Contacts</h2>
                         <address>
-                        E-mail: <a href="mailto:superliga.argentina.oficial@gmail.com">superliga.argentina.oficial@gmail.com</a> <br> 
-                        Telefonos: <br>   
-                        +54 9 351 544-9325 <br> 
-                        +54 9 351 760-3738 <br> 
+                        E-mail: <a href="mailto:someone@example.com">email@email.com</a> <br> 
+                        Phone: +1 (123) 456 7890 <br> 
+                        Fax: +1 (123) 456 7891 <br> 
                         </address>
 
-                        <h2>Direccion</h2>
+                        <h2>Address</h2>
                         <address>
-                        Av. Ejercito Argentino, <br> 
-                        Regimiento de Infanteria Paracaidista 14, <br> 
-                        Cordoba, Codigo Postal 5000 <br> 
-                        Argentina <br> 
-                        </address>
+                        Unit C2, St.Vincent's Trading Est., <br> 
+                        Feeder Road, <br> 
+                        Bristol, BS2 0UY <br> 
+                        United Kingdom <br> 
+                        </address-->
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <div class="contact-form bottom">
-                        <h2>Enviar mensaje</h2>
+                        <!--orig***h2>Send a message</h2>
                         <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
                             <div class="form-group">
-                                <input type="text" name="name" class="form-control" required="required" placeholder="Escribe tu nombre">
+                                <input type="text" name="name" class="form-control" required="required" placeholder="Name">
                             </div>
                             <div class="form-group">
-                                <input type="email" name="email" class="form-control" required="required" placeholder="Tu direccion de correo">
+                                <input type="email" name="email" class="form-control" required="required" placeholder="Email Id">
                             </div>
                             <div class="form-group">
-                                <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Escribe el texto aqui"></textarea>
+                                <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Your text here"></textarea>
                             </div>                        
                             <div class="form-group">
-                                <input type="submit" name="submit" class="btn btn-submit" value="Enviar">
+                                <input type="submit" name="submit" class="btn btn-submit" value="Submit">
                             </div>
-                        </form>
+                        </form-->
                     </div>
                 </div>
                 <div class="col-sm-12">
                     <div class="copyright-text text-center">
-                        <p>&copy; Superliga 2016. Todos los Derechos Reservados.</p>
+                        <p>&copy; AS Roma - Pagos 2016. Todos los Derechos Reservados.</p>
                         <p>Pagina creada por <a target="_blank" href="https://ar.linkedin.com/in/pablo-aguerre-b7a3aa8">Pablo Aguerre</a></p>
                     </div>
                 </div>
@@ -325,8 +335,11 @@
     </footer>
     <!--/#footer-->
 
+
     <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/dataTables.bootstrap.min.js"></script>
     <script type="text/javascript" src="js/lightbox.min.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>   
