@@ -81,83 +81,108 @@ jQuery(function($) {'use strict';
         				"responsive": true,
         				"searching": true
 				    });
+
 				t.row.add( [
 		            'Pablo',
-		            400,
-		            0,
+		            500,
 		            'No debe'
 		        ] ).draw( false );
-		        t.row.add( [
-		            'Martin',
-		            400,
-		            0,
-		            'No debe'
-		        ] ).draw( false );
-		        t.row.add( [
-		            'Milton',
-		            300,
-		            0,
-		            'Debe'
-		        ] ).draw( false );
-		        t.row.add( [
-		            'Ema',
-		            400,
-		            0,
-		            'No debe'
-		        ] ).draw( false );
-		        t.row.add( [
-		            'Luis',
-		            100,
-		            0,
-		            'Debe'
-		        ] ).draw( false );
-		        t.row.add( [
-		            'Lucho',
-		            400,
-		            0,
-		            'No debe'
-		        ] ).draw( false );
-		        t.row.add( [
-		            'Yahir',
-		            200,
-		            0,
-		            'Debe (Cumplio siempre en los meses previos)'
-		        ] ).draw( false );
-		        t.row.add( [
-		            'Nico',
-		            200,
-		            0,
-		            'Debe'
-		        ] ).draw( false );
-		        t.row.add( [
-		            'Mati',
-		            400,
-		            0,
-		            'No debe'
-		        ] ).draw( false );
-		        t.row.add( [
-		            'Nico O.',
-		            400,
-		            0,
-		            'No debe'
-		        ] ).draw( false );
+
 		        t.row.add( [
 		            'Pichon',
-		            100,
-		            0,
-		            'Deberia (No es fijo)'
+		            460,
+		            'No debe'
 		        ] ).draw( false );
+		        
 		        t.row.add( [
 		            'Juanpi',
-		            200,
+		            460,
+		            'No debe'
+		        ] ).draw( false );
+		        
+		        t.row.add( [
+		            'Lucho',
+		            460,
+		            'No debe'
+		        ] ).draw( false );
+		        
+		        t.row.add( [
+		            'Luis',
+		            400,
 		            0,
 		            'Debe'
 		        ] ).draw( false );
+		        
 		        t.row.add( [
-		            'Franco V',
+		            'Mati',
+		            460,
+		            'No debe'
+		        ] ).draw( false );
+		        
+		        t.row.add( [
+		            'Ema',
+		            235,
+		            'Debe'
+		        ] ).draw( false );
+		        
+		        t.row.add( [
+		            'Agus',
+		            235,
+		            'Debe'
+		        ] ).draw( false );
+		        
+		        t.row.add( [
+		            'Martin',
+		            460,
+		            'No debe'
+		        ] ).draw( false );
+		        
+		        t.row.add( [
+		            'Lucas',
 		            0,
+		            'Debe'
+		        ] ).draw( false );
+		        
+		        t.row.add( [
+		            'Barba',
 		            0,
-		            'No debe (Nuevo)'
+		            'Debe'
+		        ] ).draw( false );
+		        
+		        t.row.add( [
+		            'Javi',
+		            0,
+		            'Debe'
+		        ] ).draw( false );
+		        
+		        t.row.add( [
+		            'Oliver',
+		            0,
+		            'Debe'
+		        ] ).draw( false );
+		        
+		        t.row.add( [
+		            'Yahir',
+		            0,
+		            'Debe'
+		        ] ).draw( false );
+		        
+		        t.row.add( [
+		            'Nico',
+		            0,
+		            'Debe'
+		        ] ).draw( false );
+		        
+		        t.row.add( [
+		            'Vittar',
+		            0,
+		            'Debe'
+		        ] ).draw( false );
+		        
+		        t.row.add( [
+		            'Ema Villareal',
+		            0,
+		            'Debe'
 		        ] ).draw( false );
 		}
 
